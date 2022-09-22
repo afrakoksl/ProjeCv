@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+:root{
+--borderColor: #0072b1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kalam', cursive;
+}
+
+body {
+  background-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topContainer{
+ margin: auto;
+ margin-top: 20px;
+  width: 794px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+#language{
+  padding: 0px 30px;
+  border-radius: 5px;
+}
+
+#pdfBtn{
+padding: 5px 40px;
+border: none;
+background-color: #0072b1;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#pdfBtn:hover{
+  box-shadow: 0px 0px 5px 0px gold;
+  transition: all 0.2s linear;
+}
+
+.mainContainer {
+  width: 794px;
+  min-height: 500px;
+  max-height: 1123px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 306);
+  padding: 30px 20px;
+  border: 3px solid;
+}
+/* HEADER */
+.header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.profileImgContainer {
+  width: 200px;
+  height: 200px;
+}
+
+.profileImgContainer img {
+  width: 100%;
+}
+
+.profileInfoContainer {
+  height: 100%;
+  flex: 1;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(72,62,245,1) 0%, rgba(74,175,210,1) 65%, rgba(0,212,255,1) 100%);
+  margin-left: 10px;
+}
+
+/* CONTENT */
+.content {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.leftContainer {
+  width: 200px;
+  min-height: 300px;
+}
+
+.contactContainer {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0px;
+}
+
+
+.contactContainer a {
+  font-size: 15px;
+  color: #333;
+}
+
+
+#linkedin {
+  color: #0072b1;
+}
+
+#github {
+  color: #171515;
+}
+
+.leftSectionTitle {
+  font-size: 17px;
+  margin: 15px 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+/* SKİLLES */
+.skillesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillBox {
+  background-color: #aaa;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.languageTitle {
+  font-size: 18px;
+  color: #171515;
+  margin-bottom: 3px;
+}
+
+.languageDetail {
+  font-size: 14px;
+  color: #999;
+  padding-left: 3px;
+}
+
+.languageContainer {
+  margin-bottom: 10px;
+}
+
+/* RIGHT CONTENT */
+
+
+.rightContainer {
+  min-height: 300px;
+  flex: 1;
+  padding: 0px 20px;
+}
+
+.contentComponentTitle{
+  border-bottom: 1px solid #ddd;
+}
+
+.contentComponent{
+border-left: 5px solid #0072b1;
+padding-left: 20PX;
+margin-top: 20px;
+padding-bottom: 20px;
+}

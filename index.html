@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>MY-CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous"="no-referrer">
+        </script>
+</head>
+
+<body>
+
+    <div class="topContainer">
+        <button id="pdfBtn">Export To PDF</button>
+        <select id="language">
+            <option value="tr">TR</option>
+            <option value="en">EN</option>
+        </select>
+
+    </div>
+
+    <div class="mainContainer" id="myCv">
+        <div class="header">
+            <div class="profileImgContainer">
+                <img src="#" alt="">
+            </div>
+            <div class="profileInfoContainer">
+                <h1>Lütfiye Afra Köksal</h1>
+                <h3>Fronted Developer</h3>
+                <p id="personalDescription">
+                    Merhaba,ben afra
+                </p>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <!-- LEFT SİDE -->
+            <div class="leftContainer">
+                <div class="contactContainer">
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <div> <a href="mailto:llutfiyekoksall@gmail.com">llutfiyekoksall@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contactContainer">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div> <a href="tel:+905316180753">0531 618 07 53</a>
+                    </div>
+                </div>
+
+                <div class="contactContainer">
+                    <div><i class="fa-solid fa-location-dot"></i></div>
+                    <div><span>Türkiye / İstanbul</span></div>
+                </div>
+
+
+                <div class="contactContainer">
+                    <div><i id="linkedin" class="fa-brands fa-linkedin"></i></div>
+                    <div> <a target="_blank"
+                            href="https://www.linkedin.com/in/34l%C3%BCtfiyeafrak%C3%B6ksal53/">Linkedin</a>
+                    </div>
+                </div>
+
+                <div class="contactContainer">
+                    <div><i id="github" class="fa-brands fa-github"></i></div>
+                    <div> <a target="_blank" href="https://github.com/afrakoksl">Github</a>
+                    </div>
+                </div>
+                <!-- SKİLLES-->
+
+                <H3 class="leftSectionTitle">YETENEKLER</H3>
+                <div class="skillesContainer">
+                    <p class="skillBox">HTML5</p>
+                    <p class="skillBox">CSS3</p>
+                    <p class="skillBox">JAVASCRİPT</p>
+                    <P class="skillBox">REACT</P>
+                    <p class="skillBox">BOOTSTRAP</p>
+                    <p class="skillBox">NODE JS</p>
+                </div>
+
+                <h3 class="leftSectionTitle">DİLLER</h3>
+                <div class="languageContainer">
+                    <p class="languageTitle">İngilizce</p>
+                    <p class="languageDetail">Başlangıç</p>
+                </div>
+
+                <div class="languageContainer">
+                    <p class="languageTitle">Arapça</p>
+                    <p class="languageDetail">Başlangıç</p>
+                </div>
+
+
+
+
+            </div>
+            <!-- RİGHT SİDE -->
+            <div class="rightContainer">
+
+                <h1 class="contentComponentTitle" id="educationTitle">PROJELER</h1>
+                <div class="contentComponent">
+                    <h2 class="componentItemTitle">Technology-Company</h2>
+                    <p class="componentDescription">Bootstrap 5 İle Teknoloji Şirketi Site Tasarımı - Masaüstü Menü
+                        Tasarımı ve Arkaplan Ayarlamaları.</p>
+                    <p class="componentItemInfo">
+                        <small><a target="_blank" href="https://github.com/afrakoksl/Technology-Company">Proje
+                                Linki</a></small>
+                    </p>
+                </div>
+
+                <div class="contentComponent">
+                    <h2 class="componentItemTitle">Arka Plan </h2>
+                    <p class="componentDescription">JAVASCRİPT kullanılarak arka plan renk değiştirme özelliği
+                        yapılmıştır.</p>
+                    <p class="componentItemInfo">
+                        <small><a target="_blank" href="https://github.com/afrakoksl/ArkaPlan">Proje Linki</a></small>
+                    </p>
+                </div>
+
+                <div class="contentComponent">
+                    <h2 class="componentItemTitle">My-Cv</h2>
+                    <p class="componentDescription">HTML , CSS ,JS kullanarak dinamik bir web sayfa oluşturuldu.</p>
+                    <p class="componentItemInfo">
+                        <small><a target="_blank" href="https://github.com/afrakoksl/yog-a">Proje Linki</a></small>
+                    </p>
+                </div>
+
+                <div class="contentComponent">
+                    <h2 class="componentItemTitle">Login</h2>
+                    <p class="componentDescription">SASS kullanılarak login yapılmıştır.</p>
+                    <p class="componentItemInfo">
+                        <small><a target="_blank" href="https://github.com/afrakoksl/UdemySass">Proje
+                                Linki</a></small>
+                    </p>
+                </div>
+
+                <div class="contentComponent">
+                    <h2 class="componentItemTitle">To-Do-List</h2>
+                    <p class="componentDescription">HTML , CSS , JS kullanarak To Do List uygulaması yapılmıştır.</p>
+                    <p class="componentItemInfo">
+                        <small><a target="_blank" href="https://github.com/afrakoksl/To-Do-List-">Proje
+                                Linki</a></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
